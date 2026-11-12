@@ -1,0 +1,8 @@
+---
+description: Library catalog take-home constraints
+alwaysApply: true
+---
+
+Before implementing, read `AGENTS.md` and `docs/SPEC.md`.
+Execute work from `docs/PLAN.md`. Run `npm run verify` before claiming a task done.
+Do not add auth, e2e, external book APIs, or a separate REST service.

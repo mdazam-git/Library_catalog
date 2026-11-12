@@ -1,0 +1,9 @@
+---
+description: Domain language and behavior sources for catalog code
+globs: app/catalog/**, app/routes/**
+alwaysApply: false
+---
+
+For catalog-domain changes, read `GLOSSARY.md` for canonical terms and `docs/SPEC.md` for behavior. Keep the glossary definitions-only; put behavior decisions in the spec.
+
+Use the glossary's terms in code, tests, and explanations. If a proposed term conflicts with the glossary or the domain distinction is unclear, resolve that before encoding it in an interface or test. Update the glossary when the domain language is clarified or a new domain term is established.
