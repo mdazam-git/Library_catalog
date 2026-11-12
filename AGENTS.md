@@ -21,7 +21,7 @@ This repo implements a single-reader library catalog: grid, detail, and checkout
 
 ## Stack
 
-React Router framework mode (SSR), Tailwind, SQLite + Drizzle behind `CatalogRepository`, Vitest, and npm.
+React Router framework mode (SSR), Tailwind, SQLite + `better-sqlite3` behind `CatalogRepository`, Vitest, and npm. A Drizzle schema is declared but not used by the current persistence implementation.
 
 ## Key constraints
 
@@ -29,3 +29,5 @@ React Router framework mode (SSR), Tailwind, SQLite + Drizzle behind `CatalogRep
 - Search, genre, sort, and page state are URL-driven and SSR-safe.
 - Business rules must be enforced on the server; the UI may disable actions, but it cannot be the source of truth.
 - Reset data by deleting `data/catalog.sqlite`; the app reseeds it on startup.
+
+For the SSR request flow, BFF boundaries, persistence details, and architecture diagram, see [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md).
