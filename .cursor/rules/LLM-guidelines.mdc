@@ -68,3 +68,7 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
+
+## Context7 documentation
+
+Use the Context7 MCP server for current library/API documentation, package setup, and external-library code examples. Resolve a library ID before querying its docs unless the user already provides one.
